@@ -1,0 +1,34 @@
+{
+  "name": "WikiQuiz",
+  "description": "Have you learned something so well that you can write a Wikipedia article about it? Fill-in the blanks of Wikipedia articles!",
+  "author": "Andrey Mitin",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mitin001/wikiquiz"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/brunch w --server"
+  },
+  "dependencies": {
+    "backbone": "~1.3.3",
+    "backbone.marionette": "^3.0.0",
+    "foundation-sites": "^6.4.3",
+    "jquery": "~3.1.1",
+    "sass-brunch": "^2.7.0",
+    "underscore": "~1.8.3"
+  },
+  "devDependencies": {
+    "auto-reload-brunch": "^2.0.0",
+    "autoprefixer": "^6.5.1",
+    "babel-brunch": "~6.0.0",
+    "babel-preset-es2015": "~6.16.0",
+    "brunch": "^2.4.0",
+    "css-brunch": "^2.0.0",
+    "csswring": "^5.1",
+    "handlebars-brunch": "~2.10.0",
+    "javascript-brunch": "^2.0.0",
+    "postcss-brunch": "^2.0.5",
+    "uglify-js-brunch": "^2.0.0"
+  }
+}
