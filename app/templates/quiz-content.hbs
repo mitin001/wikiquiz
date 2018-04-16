@@ -1,1 +1,7 @@
 <h2>{{title}}</h2>
+<p>Available paragraphs:</p>
+<ul>
+{{#each paragraphs}}
+    <li>{{#each breadcrumbs}}{{this}} / {{/each}}{{counter}}</li>
+{{/each}}
+</ul>
