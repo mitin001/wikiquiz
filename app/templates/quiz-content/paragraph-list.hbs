@@ -1,0 +1,7 @@
+<h2>{{title}}</h2>
+<p>Select a paragraph</p>
+<ul>
+{{#each paragraphs}}
+    <li class="paragraph-link" data-paragraph-index="{{@key}}">{{#each breadcrumbs}}{{this}} / {{/each}}{{counter}}</li>
+{{/each}}
+</ul>
