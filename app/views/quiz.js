@@ -1,5 +1,7 @@
 import template from 'templates/quiz';
+
 import Wikipedia from 'models/wikipedia';
+import BlankAnchors from 'models/blank-anchors';
 
 import ParagraphList from 'views/quiz-content/paragraph-list';
 import Paragraph from 'views/quiz-content/paragraph';
@@ -32,7 +34,7 @@ export default Marionette.View.extend({
   showParagraph(index) {
     let paragraphs = this.model.get("paragraphs");
     let paragraph = Array.isArray(paragraphs) ? paragraphs[index] : {};
-    let model = new Backbone.Model(paragraph);
+    let model = new BlankAnchors(paragraph, {parse: true});
     this.showChildView("content", new Paragraph({model}));
   }
 });
