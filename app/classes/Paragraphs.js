@@ -57,9 +57,6 @@ export default class Paragraphs {
     let matches = /H([1-6])/.exec(tag);
     if (matches && matches[1] && heading) this.pushHeading(parseInt(matches[1]), heading);
   }
-  getHeading(html) {
-    return this.getHeading(html);
-  }
   getParagraphs() {
     return this.paragraphs;
   }
