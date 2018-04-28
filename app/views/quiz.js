@@ -1,6 +1,6 @@
 import template from 'templates/quiz';
 
-import Wikipedia from 'models/wikipedia';
+import Text from 'models/wikipedia/text';
 import BlankAnchors from 'models/blank-anchors';
 
 import ParagraphList from 'views/quiz-content/paragraph-list';
@@ -25,8 +25,8 @@ export default Marionette.View.extend({
   },
   getPage(page, success) {
     let data = {page};
-    let wiki = new Wikipedia();
-    wiki.fetch({data, success});
+    let text = new Text();
+    text.fetch({data, success});
   },
   showParagraphList() {
     this.showChildView("content", new ParagraphList({model: this.model}));
